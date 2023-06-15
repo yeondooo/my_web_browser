@@ -16,6 +16,7 @@ class _MainScreenState extends State<MainScreen> {
     super.initState();
 
     _webViewController = WebViewController()
+      ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..loadRequest(Uri.parse('https://flutter.dev'));
   }
 
